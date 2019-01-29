@@ -1,7 +1,6 @@
 module BinaryTreeSpec (spec) where
 
 import Test.Hspec
-
 import BinaryTree
 
 spec :: Spec

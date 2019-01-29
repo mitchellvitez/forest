@@ -6,23 +6,10 @@ Trees, and data structures based on trees
 
 Run `stack test`
 
-## Functions
-
-The data structures here implement one or more of the following (names are standardized)
-
-- insert
-- member
-- delete
-- findMin
-- findMax
-- findKth
-- size
-- traverse
-- merge
-
 ## What's Included
 
 - BinaryTree
+  - Map
 
 ## Anything else?
 
