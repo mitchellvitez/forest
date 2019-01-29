@@ -11,12 +11,12 @@ Run `stack test`
 These kinds of trees (and their derivative data structures) are in this repo:
 
 - Binary search tree
-  - Map
 - Heap-ordered tree
   - Leftist min heap
 - Binomial tree
   - Binomial heap
 - Red-black tree
+  - Map
   - Set
 - Splay tree
   - Splay heap

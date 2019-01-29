@@ -3,10 +3,12 @@ module RedBlackTree where
 -- Red-black trees.
 
 data Color = Red | Black
+  deriving (Eq, Show)
 
 data RedBlackTree a =
     RedBlackTree Color a (RedBlackTree a) (RedBlackTree a)
   | Empty
+  deriving (Eq, Show)
 
 empty :: RedBlackTree a
 empty = Empty
@@ -39,3 +41,7 @@ insert x s =
       | y < x = balance (RedBlackTree color y l (ins r))
       | otherwise = s
     RedBlackTree _ y l r = ins s
+
+size :: Ord a => RedBlackTree a -> Int
+size Empty = 0
+size (RedBlackTree _ _ l r) = 1 + size l + size r

@@ -2,7 +2,7 @@ module MapSpec (spec) where
 
 import Test.Hspec
 import Map
-import BinarySearchTree (BinarySearchTree(Empty), size)
+import RedBlackTree (RedBlackTree(Empty), size)
 import Prelude hiding (lookup)
 
 spec :: Spec
