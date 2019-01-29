@@ -18,7 +18,9 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Binomial heap
 - Red-black tree
   - Set
+- Splay tree
+  - Splay heap
 
 ## Anything else?
 
-Much of this work is inspired by Okasaki's _Purely Functional Data Structures_. I've cleaned up the implementations here based on that reference, but I tried to come up with my own implementations first before consulting it.
+This work is inspired by Okasaki's _Purely Functional Data Structures_. I've cleaned up the implementations here based on that reference, but I tried to come up with my own implementations first before consulting it.
