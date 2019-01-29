@@ -1,7 +1,7 @@
-module BinaryTreeSpec (spec) where
+module BinarySearchTreeSpec (spec) where
 
 import Test.Hspec
-import BinaryTree
+import BinarySearchTree
 
 spec :: Spec
 spec = do
@@ -9,33 +9,33 @@ spec = do
 
   describe "insert" $ do
     it "empty" $ do
-      insert 1 Empty `shouldBe` (BinaryTree 1 Empty Empty)
+      insert 1 Empty `shouldBe` (BinarySearchTree 1 Empty Empty)
 
     it "many elements" $ do
       (insert 2 $ insert 3 $ insert 1 Empty) `shouldBe`
-        (BinaryTree 1 Empty (BinaryTree 3 (BinaryTree 2 Empty Empty) Empty))
+        (BinarySearchTree 1 Empty (BinarySearchTree 3 (BinarySearchTree 2 Empty Empty) Empty))
 
   describe "member" $ do
     it "empty" $ do
       member 0 Empty `shouldBe` False
 
     it "one element" $ do
-      member 0 (BinaryTree 0 Empty Empty) `shouldBe` True
+      member 0 (BinarySearchTree 0 Empty Empty) `shouldBe` True
 
     it "many elements" $ do
       member 5 testTree `shouldBe` True
 
   describe "findMin" $ do
     it "many elements" $ do
-      findMin testTree `shouldBe` 1
+      findMin testTree `shouldBe` Just 1
 
   describe "findMax" $ do
     it "many elements" $ do
-      findMax testTree `shouldBe` 9
+      findMax testTree `shouldBe` Just 9
 
   describe "size" $ do
     it "empty" $ do
-      size (Empty :: BinaryTree Int) `shouldBe` 0
+      size (Empty :: BinarySearchTree Int) `shouldBe` 0
 
     it "many elements" $ do
       size testTree `shouldBe` 8
