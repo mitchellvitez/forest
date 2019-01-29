@@ -20,6 +20,8 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Set
 - Splay tree
   - Splay heap
+- Heap-ordered multitree
+  - Pairing heap
 
 ## Anything else?
 
