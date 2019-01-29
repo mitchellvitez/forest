@@ -21,14 +21,14 @@ member x (BinaryTree y l r)
   | x > y = member x r
   | otherwise = True
 
-findMin :: Ord a => BinaryTree a -> a
-findMin Empty = error "Can't find minimum element of empty tree"
-findMin (BinaryTree x Empty _) = x
+findMin :: Ord a => BinaryTree a -> Maybe a
+findMin Empty = Nothing
+findMin (BinaryTree x Empty _) = Just x
 findMin (BinaryTree _ l _) = findMin l
 
-findMax :: Ord a => BinaryTree a -> a
-findMax Empty = error "Can't find maximum element of empty tree"
-findMax (BinaryTree x _ Empty) = x
+findMax :: Ord a => BinaryTree a -> Maybe a
+findMax Empty = Nothing
+findMax (BinaryTree x _ Empty) = Just x
 findMax (BinaryTree _ _ r) = findMax r
 
 size :: Ord a => BinaryTree a -> Int
