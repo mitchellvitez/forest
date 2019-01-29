@@ -22,6 +22,7 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Splay heap
 - Heap-ordered multitree
   - Pairing heap
+- Rose tree (with Traversable)
 
 ## Anything else?
 
