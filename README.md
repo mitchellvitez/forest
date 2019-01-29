@@ -16,6 +16,7 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Leftist min heap
 - Binomial tree
   - Binomial heap
+- Red-black tree
 
 ## Anything else?
 
