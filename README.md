@@ -22,8 +22,9 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Splay heap
 - Heap-ordered multitree
   - Pairing heap
-- Rose tree (with Traversable)
+- Rose tree (with Traversable instance)
+- 2-3 B-trees
 
 ## Anything else?
 
-This work is inspired by Okasaki's _Purely Functional Data Structures_. I've cleaned up the implementations here based on that reference, but I tried to come up with my own implementations first before consulting it.
+This work is inspired by Okasaki's _Purely Functional Data Structures_. I've cleaned up some of the implementations here based on that reference, but I tried to come up with my own implementations first before consulting it. Any implementation not found in that book is my own.
