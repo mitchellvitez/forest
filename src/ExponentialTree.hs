@@ -16,9 +16,9 @@ import GHC.TypeLits
 
 -- Type-level multiplication, n * m
 type family Mul (n :: PeanoNum) (m :: PeanoNum) :: PeanoNum where
-  Mul 'Z _ = 'Z
-  Mul _ 'Z = 'Z
-  Mul n ('S m) = Add n (Mul n m)
+  Mul Z _ = Z
+  Mul _ Z = Z
+  Mul n (S m) = Add n (Mul n m)
 
 -- Type-level exponentiation, a^b
 type family Exp (a :: PeanoNum) (b :: PeanoNum) :: PeanoNum where
@@ -28,7 +28,7 @@ type family Exp (a :: PeanoNum) (b :: PeanoNum) :: PeanoNum where
 
 data ExponentialTree a (d :: PeanoNum)
   = Empty
-  | ExponentialTree a (VecPeano d (ExponentialTree a (Exp (S (S Z)) d)))
+  | ExponentialTree a (VecPeano (Exp (S (S Z)) d) (ExponentialTree a (S d)))
 
 instance Show a => Show (ExponentialTree a d) where
   show Empty = "Empty"
