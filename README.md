@@ -24,6 +24,8 @@ These kinds of trees (and their derivative data structures) are in this repo:
   - Pairing heap
 - Rose tree (with Traversable instance)
 - 2-3 B-trees
+- Ternary tree
+- Exponential trees (with dimensionality constraints enforced by types)
 
 ## Anything else?
 
